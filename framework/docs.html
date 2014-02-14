@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>DMI | Framework Docs</title>
+    
+    <!--Styles-->
+    <link rel="stylesheet" href="css/master.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/avgrund.css" type="text/css">
+    <link rel="stylesheet" href="css/prism.css" type="text/css">
+    <link rel="stylesheet" href="css/scroll-themes/tab.css" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Duru+Sans|Exo+2:400,100,200,300' rel='stylesheet' type='text/css'>
+    <!--End Styles-->
+    
+    <!--Scripts-->
+    <script src="js/jquery-2.1.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery.scrollUp.min.js" type="text/javascript"></script>
+    <script src="js/prism.js" type="text/javascript"></script>
+    <script src="http://prismjs.com/prefixfree.min.js"></script>
+    <!--<script type="text/javascript">
+		$(function () {
+	      $.scrollUp({
+	        scrollName: 'scrollUp', // Element ID
+	        topDistance: '300', // Distance from top before showing element (px)
+	        topSpeed: 300, // Speed back to top (ms)
+	        animation: 'fade', // Fade, slide, none
+	        animationInSpeed: 200, // Animation in speed (ms)
+	        animationOutSpeed: 200, // Animation out speed (ms)
+	        scrollText: 'Scroll to top', // Text for element
+	        activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+	      });
+	    });
+    </script>-->
+    <!--End Scripts-->
+</head>
+<body id="body">
+	<!--Nav-->
+    <div class="nav">
+        <ul>
+            <li class="title">DMI <small>Framework</small></li>
+            <span class="wrapper links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Docs</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="">Github</a></li>
+            </span>
+        </ul>
+    </div>
+    <div class="navclear"></div>
+    <h1>Getting Started</h1>
+    <p>To start using the framework, the following layout is <strong>required</strong> for every HTML page you make.</p>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    	&lt;meta charset="UTF-8"&gt;
+    	&lt;title&gt;Page Title&lt;/title&gt;
+    	
+    	&lt;link rel="stylesheet" type="text/css" href="css/master.css"&gt;
+    	
+    	&lt;script src="js/jquery.min.js" type="text/css"&gt;
+    	&lt;script src="js/scrollUp.min.js" type="text/css"&gt;
+    	&lt;script src="js/modal.js" type="text/css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    	Content Goes Here
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+    
+	<h1>Typography</h1>
+		<p>Here are some examples of typography used in our framework</p>
+		<h2>Headers:</h2>
+		<pre>
+			<h1>Header 1</h1>
+			<h2>Header 2</h2>
+			<h3>Header 3</h3>
+			<h4>Header 4</h4>
+			<h5>Header 5</h5>
+			<h6>Header 6</h6>
+		</pre>
+		<h2>Paragraphs:</h2>
+		<pre>
+			<p>This is just a paragraph. The default font weight is a light and happy 300, but if you'd like a normal weighted font, just use the class <code>txt-regular</code>.</p>
+			<p class="txt-large">This is a paragraph with larger text, to use the larger text use the class <code>txt-large</code>.</p>
+		</pre>
+		<h2>Navigation:</h2>
+		<p>For the navigation bar, copy the syntax for it below.</p>
+		<pre>
+		<strong>Basic</strong>
+		&lt;div class="nav"&gt;
+			&lt;ul&gt;
+				&lt;li class="title"&gt;Your Site Title&lt;/li&gt;
+				&lt;div class="links"&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+				&lt;/div&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		<strong>No Title</strong>
+		&lt;div class="nav"&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		<strong>Title, links on the left</strong>
+		&lt;div class="nav"&gt;
+			&lt;ul&gt;
+				&lt;li class="title"&gt;Your Site Title&lt;/li&gt;
+				&lt;div class="links links-left"&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+				&lt;/div&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		</pre>
+		<h2>Header Box</h2>
+		<div class="head">
+			<h1>An example header box</h1>
+			<p>With some sub-text to go along with it</p>
+		</div>
+		<pre>
+			&lt;div class="head"&gt;
+				&lt;h1&gt;An example header box&lt;/h1&gt;
+				&lt;p&gt;With some sub-text to go along with it&lt;/p&gt;
+			&lt;/div&gt;
+		</pre>
+		<p>You can, of course, change the background color. To do that, just add any of the following classes: <code>head-blue</code>, <code>head-orange</code>, <code>head-grey</code>, <code>head-transparent</code> or <code>head-transparent border</code></p>
+		<h2>Buttons</h2>
+		<a class="btn" href="">Default Button</a>
+		<a class="btn-lax" href="">Relaxed Button</a>
+		<a class="btn-flat" href="">Flat Button</a>
+</body>
+</html>
